@@ -351,7 +351,7 @@ class DAIKIN
         end
         import introspect
         try
-            var res = introspect.module('.extensions/daikin_ac.tapp#daikin_matter', true)
+            var res = introspect.module('.extensions/Daikin_AC.tapp#daikin_matter', true)
             if res == nil || res.find("DAIKIN_MATTER", nil) == nil
                 log("DAIKIN: Matter Thermostat module failed to load (check daikin_matter.be)", 1)
                 return false
