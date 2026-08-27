@@ -1,5 +1,9 @@
 # Changelog
 
+[v26.8.27.1]
+### Changed
+- Hash chk only active within three seconds after first receive (#23772)
+
 [v26.4.6.1]
 ### Added
 - HAss discovery for DDS75L and LHT52 if `SetOption19 0` by UBWH (#24458)

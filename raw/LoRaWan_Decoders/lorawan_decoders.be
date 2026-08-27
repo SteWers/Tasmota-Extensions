@@ -457,6 +457,7 @@ class lorawan_decoders
   var lw_decoders
   var topic_cached
   var last_payload_hash
+  var last_payload_hash_time
   var web_msg_cache
   var cache_timeout
   var lw_settings
@@ -469,6 +470,7 @@ class lorawan_decoders
   def init()
     self.lw_decoders = {}
     self.last_payload_hash = 0
+    self.last_payload_hash_time = 0
     self.web_msg_cache = ""
     self.cache_timeout = 0
 
@@ -634,10 +636,11 @@ class lorawan_decoders
       hashCheck = true
     end
     
-    if hashCheck
+    if hashCheck && tasmota.time_reached(self.last_payload_hash_time)
       var current_hash = self._calculate_payload_hash(payload)
       if current_hash == self.last_payload_hash return true end
       self.last_payload_hash = current_hash
+      self.last_payload_hash_time = tasmota.millis() + 3000
     end
 
     try
