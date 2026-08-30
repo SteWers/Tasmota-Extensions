@@ -1,6 +1,10 @@
 # Changelog
 
-[v26.8.27.1]
+[v26.8.30.0]
+### Changed
+- Add <DIV> to battery to enable showing tooltip on touch devices
+
+[v26.8.27.0]
 ### Changed
 - Hash chk only active within three seconds after first receive (#23772)
 
