@@ -1,0 +1,8 @@
+{
+  "name": "Zigbee Toggle",
+  "version": "0x1A081A01",
+  "description": "Toggle button for each Zigbee OnOff endpoint in the main page device list",
+  "author": "tasict",
+  "min_tasmota": "0x0F060000",
+  "features": ""
+}
