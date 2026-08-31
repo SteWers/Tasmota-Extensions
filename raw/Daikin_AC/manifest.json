@@ -1,0 +1,7 @@
+{
+  "name": "Daikin AC WiFi",
+  "version": "0x1A080601",
+  "description": "Support for Daikin WiFi-enabled air conditioners (BRP069/BRP072-style adapters). Optional Matter integration.",
+  "author": "Christian Baars",
+  "min_tasmota": "0x0F050002"
+}
